@@ -1,0 +1,167 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Garamond", serif;
+    background: url('imagens/fundo.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #f4f4f4;
+}
+
+/* Container styling */
+#container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid rgba(255, 223, 186, 0.7);
+    border-radius: 10px;
+    background: rgba(34, 34, 34, 0.8);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Header formatting */
+#topo {
+    background: rgba(100, 100, 100, 0.8);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#topo h1 {
+    font-family: "Cinzel", serif;
+    font-size: 2.5em;
+    color: #ffdd57;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#topo a {
+    text-decoration: none;
+    color: #ffdd57;
+    transition: color 0.3s;
+}
+
+#topo a:hover {
+    color: #ff8c00;
+}
+
+/* Sidebar formatting */
+#link-direita, #link-esquerda {
+    position: fixed;
+    width: 280px;
+    margin: 15px;
+    background: rgba(85, 26, 26, 0.9);
+    border: 2px solid rgba(255, 223, 186, 0.7);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#link-direita {
+    right: 15px;
+}
+
+#link-esquerda {
+    left: 15px;
+}
+
+#link-esquerda h2, #link-direita h2 {
+    padding: 10px;
+    color: #ffdd57;
+    text-align: center;
+    background: rgba(100, 40, 40, 0.9);
+    border-bottom: 2px solid rgba(255, 223, 186, 0.7);
+}
+
+#link-esquerda ul, #link-direita ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+#link-esquerda li a, #link-direita li a {
+    display: block;
+    padding: 15px;
+    color: #ffdd57;
+    transition: background 0.3s;
+}
+
+#link-esquerda a:hover, #link-direita a:hover {
+    background: rgba(255, 140, 0, 0.5);
+}
+
+/* Main content formatting */
+#conteudo {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#contato {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+}
+
+#conteudo #personagens .itens {
+    float: right;
+    margin: 15px;
+}
+
+.dividir-Atos {
+    border-color: red;
+}
+
+#personagens a:link, #personagens a:visited {
+    color: #ffdd57;
+}
+
+#personagens a:hover {
+    color: #ff8c00;
+    font-family: "Cinzel", serif;
+}
+
+#Atos {
+    font-family: "Cinzel", serif;
+    font-size: 1.5em;
+    color: #ffdd57;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #link-direita, #link-esquerda {
+        width: 100%;
+        position: relative;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    #container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    #topo h1 {
+        font-size: 2em;
+    }
+
+    #conteudo {
+        padding: 15px;
+    }
+}
